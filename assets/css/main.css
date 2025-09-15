@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #1a1715; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #110a06; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0180C9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #122B42; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(255, 255, 255, 0.8);  /* The default color of the main navmenu links */
-  --nav-hover-color: #0180C9; /* #c85716 Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #122B42; /* #0180C9 #c85716 Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #1a1715; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0180C9; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #122B42; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #000000;
+  --background-color: #000000e6; /* #000000; */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252626;
@@ -143,7 +143,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: rgba(85, 126, 145, 0.3);/* 255, 255, 255, 0); */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -162,7 +162,7 @@ h6 {
 }
 
 .header .top-row .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 10px;
 }
 
@@ -208,7 +208,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #1a1715;
+  --background-color: #557E91; /*597378 #1a1715; */
 }
 
 /*--------------------------------------------------------------
@@ -2104,7 +2104,7 @@ section,
 
 .services .services-showcase .featured-service {
   position: relative;
-  height: 600px;
+  height: 800px; /* 600px*/
   overflow: hidden;
 }
 
@@ -2199,7 +2199,7 @@ section,
 .services .services-showcase .services-list {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 800px;
   background: var(--surface-color);
 }
 
@@ -2338,7 +2338,7 @@ section,
 
 @media (max-width: 991px) {
   .services .services-showcase .featured-service {
-    height: 400px;
+    height: 750px;/* 400px; */
     margin-bottom: 2rem;
   }
 
