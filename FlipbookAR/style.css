@@ -1,0 +1,83 @@
+body{
+  background-color: rgba(0,0,0,.03);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadow{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+#flipbook{
+  user-select: none;
+}
+.hard{
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+   &.p2{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 55%,rgba(235,235,235,1) 100%);
+  }
+  &.p7{
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 55%,rgba(235,235,235,1) 100%);
+  }
+}
+.page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pages .page-img{
+  position: relative;
+  &.even{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 55%,rgba(235,235,235,1) 100%);
+     &::after{
+      content: "";
+      position: absolute;
+      cursor: pointer;
+      width: 60px;
+      top: 0;
+      left: 0;
+      height: 60px;
+    }
+     &::before{
+      content: "";
+      position: absolute;
+      cursor: pointer;
+      width: 60px;
+      bottom: 0;
+      left: 0;
+      height: 60px;
+    }
+	
+  }
+  &.odd{
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 55%,rgba(235,235,235,1) 100%);
+     &::after{
+      content: "";
+      position: absolute;
+      cursor: pointer;
+      width: 60px;
+      top: 0;
+      right: 0;
+      height: 60px;
+    }
+     &::before{
+      content: "";
+      position: absolute;
+      cursor: pointer;
+      width: 60px;
+      bottom: 0;
+      right: 0;
+      height: 60px;
+    }
+  }
+  background-color: white;
+}
