@@ -1,3 +1,11 @@
+/**
+* Template Name: LeadPage
+* Template URL: https://bootstrapmade.com/leadpage-bootstrap-landing-page-template/
+* Updated: Aug 12 2025 with Bootstrap v5.3.7
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -58,6 +66,29 @@ body {
   font-family: var(--default-font);
 }
 
+.navbar {
+  margin-top: 10px;
+}
+.bg-color {
+  padding: 10px 45px;
+  &::before {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: skew(-21deg);
+    display: block;
+    content: "";
+    background-color: rgb(240, 140, 60);
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -77,6 +108,26 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+}
+
+/* Style for the new navigation icons to match social links */
+.nav-icons a {
+  color: var(--nav-color); 
+  line-height: 1;
+  margin-right: 15px; 
+  font-size: 1.2rem; 
+  transition: 0.3s;
+}
+
+/* Hover/Focus style for interaction */
+.nav-icons a:hover {
+  color: var(--nav-hover-color);  
+}
+
+/* Ensure icons align correctly in the header */
+#header .nav-icons {
+    /* Align icons vertically with other nav content */
+    height: 100%; 
 }
 
 /* PHP Email Form Messages
@@ -4431,4 +4482,9 @@ section,
     margin-right: 0;
     border-radius: 0;
   }
+}
+
+[dir="rtl"] .mobile-nav-toggle {
+    right: auto; /* Remove the right positioning */
+    left: 20px;  /* Set it to the left side */
 }
