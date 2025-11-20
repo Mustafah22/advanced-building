@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Advanced Building Flip Book</title>
+		
+		<link href="assets/img/ABfavicon1.png" rel="icon"/>
+		<link href="assets/img/ABapple-touch-icon1.png" rel="apple-touch-icon"/>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+			.pages.page-img {
+            /* This is crucial: ensures the background image fills the page */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            /* Removes any default text content visible on the page */
+            font-size: 0;
+            line-height: 0;
+            text-align: center;
+			}
+			
+			/* Style the 'hard' cover pages to use images as well */
+			.hard.cover {
+            background-color: transparent !important; /* Override the black background from SCSS */
+            background-size: cover;
+            background-repeat: no-repeat;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<div id="flipbook">
+			<!-- <div class="hard"> Be Genius </div>
+				<div class="hard"></div>
+				
+				<div class="pages page-img" style="background-image: url('assets/PDFIMG/page1.jpg');"></div>
+				<div class="pages"> Page 1 </div>
+				<div class="pages"> Page 2 </div>
+				<div class="pages"> Page 3 </div>
+				<div class="pages"> Page 4 </div>
+				<div class="hard"></div>
+			<div class="hard"></div> -->
+			
+			<div class="hard cover" style="background-image: url('assets/PDFIMG/Cover.jpg');"></div>
+			
+			<!-- <div class="hard"></div> -->
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page1.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page2.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page3.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page4.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page5.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page6.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page7.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page8.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page9.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page10.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page11.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page12.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page13.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page14.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page15.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page16.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page17.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page18.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page19.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page20.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page22.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page23.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page24.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page25.jpg');"></div>
+			
+			<div class="pages page-img" style="background-image: url('assets/PDFIMG/page26.jpg');"></div>
+			
+			<div class="hard"></div>
+			
+			<div class="hard cover" style="background-image: url('assets/PDFIMG/Back.jpg');"></div>
+		</div>
+		
+		<!-- Script -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="script.js" defer></script>
+		
+	</body>
+</html>
